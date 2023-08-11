@@ -1,9 +1,14 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(temp) {
+  return (temp -32) * 5/9
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temp) {
+  return (temp * 9/5) + 32
 };
 
+
+//(0°C × 9/5) + 32 = 32°F
+//(32°F − 32) × 5/9 = 0°C
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
